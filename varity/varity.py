@@ -72,7 +72,9 @@ def compileCode(config):
         extra_name = ""
         if other_op == 1:
             extra_name = "_nofma"
-        compilation_arguments = [compiler_path, op_level, more_ops, libs, "-o", fileName+"-"+compiler_name+op_level+extra_name+".exe", fileName]
+        # compilation_arguments = [compiler_path, op_level, more_ops, libs, "-o", fileName+"-"+compiler_name+op_level+extra_name+".exe", fileName]
+        compilation_arguments = [compiler_path, op_level, more_ops, "-o", fileName+"-"+compiler_name+op_level+extra_name+".exe", fileName, libs]
+
         cmd = " ".join(compilation_arguments)
         #cmd = compiler_path + " " + op_level + " " + more_ops + " " + libs + " -o " + fileName + "-" + compiler_name + op_level + extra_name + ".exe " + fileName
         if isCUDACompiler(compiler_name):
