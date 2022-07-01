@@ -19,7 +19,7 @@ MATH_FUNC_PROBABILITY = 0.05
 NUM_GROUPS = 1
 
 # Number of tests per group
-TESTS_PER_GROUP = 10000
+TESTS_PER_GROUP = 100
 
 # Set of commpilers to test.
 # COMPILERS is a list containing tuples (x, y), 
