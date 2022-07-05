@@ -7,3 +7,5 @@ python filter.py bronze.idav.ucdavis.edu_218879
 python naming.py
 
 python rewriter.py
+
+python combine.py
