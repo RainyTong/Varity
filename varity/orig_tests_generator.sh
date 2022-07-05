@@ -1,8 +1,8 @@
 # $1 is the directory of output files to parse
-python filter.py $1 
+python3 filter.py $1 
 
-python naming.py
+python3 naming.py
 
-python rewriter.py
+python3 rewriter.py
 
-python combine.py
+python3 combine.py
