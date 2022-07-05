@@ -1,11 +1,9 @@
 modify cfg.py
 
-python varity.py
+python3 varity.py
 
-python filter.py bronze.idav.ucdavis.edu_218879
+chmod 777 orig_tests_generator.sh
 
-python naming.py
+./orig_tests_generator.sh <dir_name>
 
-python rewriter.py
-
-python combine.py
+> Then check the generated programs at ./tests and ./tests+checker
