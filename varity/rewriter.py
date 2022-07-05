@@ -3,7 +3,9 @@ import os
 
 diff = 0
 for dir in sorted(os.listdir('./')):
-    if os.path.isdir(dir) and dir.startswith('bronze'):
+    # if os.path.isdir(dir) and dir.startswith('bronze'):
+    if os.path.isdir(dir) and os.path.exists(os.path.join(dir, "results.json")):
+
         print(dir)
 
         results_json = os.path.join(dir, "results.json")
